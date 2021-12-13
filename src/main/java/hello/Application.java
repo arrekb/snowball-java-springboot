@@ -124,15 +124,14 @@ public class Application {
         writeCommittedStream.send(arenaUpdate.arena);
         Random rand = new Random();
         int n = rand.nextInt(10);
-        switch (n) {
-            case 0:
-                return "F";
-            case 1:
-                return "L";
-            case 2:
-                return "R";
-        }
-        return "T";
+        if (n == 0)
+            return "L";
+        else if (n == 1)
+            return "R";
+        else if (n < 6)
+            return "F";
+        else
+            return "T";
     }
 }
 
