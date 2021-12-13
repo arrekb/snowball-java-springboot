@@ -128,7 +128,7 @@ public class Application {
             return "L";
         else if (n == 1)
             return "R";
-        else if (n < 6)
+        else if (n < 5)
             return "F";
         else
             return "T";
